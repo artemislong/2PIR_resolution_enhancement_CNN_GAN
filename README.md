@@ -1,4 +1,3 @@
-```markdown
 # 📝 Title:  
 **Label-Free, Two-Photon Image Resolution Enhancement Using a Deep-Learning Autoencoder Algorithm**
 
@@ -41,4 +40,3 @@ Microscopic imaging systems with high resolution (HR) enable extraction of funct
 
 ### 👤 Biography:
 **Tien Long Dinh** is a senior undergraduate student at Tufts University and a research assistant at the Georgakoudi Lab. His current work focuses on the development and investigation of image processing, object detection, and transformation algorithms for non-invasive biomedical diagnostics, including polarization-enhanced laparoscopy and high-resolution microscopic imaging.
-```
