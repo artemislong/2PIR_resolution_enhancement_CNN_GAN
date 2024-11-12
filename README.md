@@ -1,5 +1,4 @@
-# 📝 Title:  
-**Label-Free, Two-Photon Image Resolution Enhancement Using a Deep-Learning Autoencoder Algorithm**
+# 📝 Label-Free, Two-Photon Image Resolution Enhancement Using a Deep-Learning Autoencoder Algorithm
 
 ---
 
