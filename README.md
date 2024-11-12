@@ -10,6 +10,7 @@
   - ⁴ Cell, Developmental, and Molecular Biology Program, Tufts University, Boston, MA, USA  
 
 ---
+![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
 
 ### 📄 250-Word Abstract:
 Non-invasive, label-free microscopy systems have seen significant improvements in imaging quality for tissue analysis and diagnostics. High lateral imaging resolution in novel ex vivo imaging systems has enabled the development of algorithms to extract functional information from living tissues. However, in vivo clinical microscopic imaging systems may have limited imaging resolution to extract relevant functional information. Modifying clinical imaging hardware to increase resolution can be constrained by regulatory and engineering challenges. Therefore, low-resolution (LR) images require computational methods to recover important signals. 
