@@ -12,7 +12,7 @@
 ---
 ## 🧠 Model Training
 
-These notebooks implement model training experiments for image super-resolution and denoising. They support both full image and patch-based training, with outputs in `.npz` format for train-test-validation. These notebooks were used for development and quick testing of new training strategies or methods before being converted into Python scripts for training on High-Performance Computing Cluster at Tufts University.
+These notebooks implement model training experiments for image super-resolution and denoising. They support both full image and patch-based training, with outputs in `.npz` format for train-test-validation. These notebooks were used for development and quick testing of new training strategies or methods before being converted into Python scripts for training on High-Performance Computing Cluster at Tufts University. Full scripts and training/validation pipeline is not included in this repository.
 
 ```plaintext
 ├── model_training/
