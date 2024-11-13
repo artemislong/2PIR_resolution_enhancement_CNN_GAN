@@ -68,15 +68,17 @@ Processes 3D image stacks, creating depth-based patches suitable for 3D models. 
 ## 📈 Evaluation Script
 The Train_eval.ipynb notebook loads a saved model and runs testing, evaluating performance using PSNR for reconstruction accuracy and SSIM for structural similarity to the target domain.
 
+
+
+---
+## 🙏 Acknowledgments
+Special thanks to Professor Irene Georgakoudi for her mentorship and the opportunity to be involved in this research and be part of ODDET lab team. Sincere gratitude to Dr. Nilay Vora for his invaluable support, training, and guidance, making this journey both enriching and memoriable.
+
+
 ---
 ![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
 
 ---
-🙏 Acknowledgments
-Special thanks to Professor Irene Georgakoudi for her mentorship and the opportunity to be involved in this research and be part of ODDET lab team. Sincere gratitude to Dr. Nilay Vora for his invaluable support, training, and guidance, making this journey both enriching and memoriable.
-
----
-
 ### 👥 Authors (of the overall research project):
 - **Tien Long Dinh**¹*, **Christopher M. Polleys**¹, **Nilay Vora**¹, **Hong-Thao Thieu**², **Elizabeth Genega**³, and **Irene Georgakoudi**¹⁴  
   - ¹ Department of Biomedical Engineering, Tufts University, Medford, MA, USA  
