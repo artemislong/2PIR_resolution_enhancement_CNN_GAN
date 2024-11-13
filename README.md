@@ -10,33 +10,44 @@
   - ⁴ Cell, Developmental, and Molecular Biology Program, Tufts University, Boston, MA, USA  
 
 ---
+
 ## 🧠 Model Training
 
-These notebooks implement model training experiments for image super-resolution and denoising. They support both full image and patch-based training, with outputs in `.npz` format for train-test-validation. These notebooks were used for development and quick testing of new training strategies or methods before being converted into Python scripts for training on High-Performance Computing Cluster at Tufts University. Full scripts and training/validation pipeline is not included in this repository.
+These notebooks implement model training experiments to enhance resolution in low-resolution microscopy images for downstream analysis of mitochondrial clustering and redox ratio extraction. Models—RCAN, CARE, CycleGAN, and SRGAN are experimented to restore fine structural and metabolic details in cervical tissue images. Each notebook supports full-image and patch-based training, with outputs in .npz format. These notebooks were used for quick development and testing of models prior to conversion into training pipeline scripts deployed on high-performance computers at Tufts University. Full scripts and the complete pipeline are not included here.
 
 ```plaintext
 ├── model_training/
 │   ├── RCAN_standard.ipynb         # Trains RCAN for super-resolution on 2D images, with optional patching and SSIM evaluation
 │   ├── CSBDeep_experiment.ipynb    # Trains CSBDeep for denoising microscopy images, with optional patch-based processing
 │   ├── CARE_patch_train.ipynb      # Trains CARE for 2D image denoising, supporting full and patch-based input
-│   └── CARE_patch_train_3D.ipynb   # Trains CARE for 3D image stack denoising, supporting depth-based patching
+│   ├── CARE_patch_train_3D.ipynb   # Trains CARE for 3D image stack denoising with depth-based patching
+│   ├── CycleGAN_UTOM.ipynb         # Trains CycleGAN for unsupervised content-preserving transformation
+│   └── SRGAN.ipynb                 # Trains SRGAN for photorealistic single-image super-resolution
 ```
+
+Here’s the refined README with a consolidated explanation for CARE-based notebooks:
+
+---
 
 ### 🖼️ `RCAN_standard.ipynb`
 
-Trains a Residual Channel Attention Network (RCAN) for 2D image super-resolution, supporting both full images and patches, with SSIM evaluation options. Based on *[Image Super-Resolution Using Very Deep Residual Channel Attention Networks, ECCV 2018](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yulun_Zhang_Image_Super-Resolution_Using_ECCV_2018_paper.pdf)* by Yulun Zhang et al.
+Implements the **Residual Channel Attention Network (RCAN)**, a deep convolutional neural network (CNN) model for 2D image super-resolution. RCAN upscales low-resolution images while preserving fine details, using residual connections to stabilize training and channel attention mechanisms to emphasize important features. Based on *[Image Super-Resolution Using Very Deep Residual Channel Attention Networks, ECCV 2018](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yulun_Zhang_Image_Super-Resolution_Using_ECCV_2018_paper.pdf)* by Yulun Zhang et al.
 
-### 🧪 `CSBDeep_experiment.ipynb`
+### 🧪 `CSBDeep_experiment.ipynb`, 🔍 `CARE_patch_train.ipynb`, and 🧬 `CARE_patch_train_3D.ipynb`
 
-Trains CSBDeep for denoising noisy microscopy images, supporting both full and patch-based data with optional normalization. Based on *[CARE: Content-Aware Image Restoration, Nature Methods 2018](https://doi.org/10.1038/s41592-018-0216-7)* by Martin Weigert et al.
+All three notebooks use **Content-Aware Image Restoration (CARE)**, a supervised deep convolutional autoencoder designed for denoising and restoring microscopy images. CARE learns to remove noise and enhance image quality from paired low- and high-quality images. 
 
-### 🔍 `CARE_patch_train.ipynb`
+- **CSBDeep_experiment.ipynb**: Implements CARE for denoising noisy microscopy images, supporting both full and patch-based data with optional normalization. Based on *[CARE: Content-Aware Image Restoration, Nature Methods 2018](https://doi.org/10.1038/s41592-018-0216-7)* by Martin Weigert et al.
+- **CARE_patch_train.ipynb**: Adapts CARE to process 2D microscopy images with both full-image and overlapping patch options, saving results in `.npz` format for 2D denoising applications.
+- **CARE_patch_train_3D.ipynb**: Extends CARE to handle 3D microscopy stacks, utilizing depth-based patching to reduce noise in volumetric image data.
 
-Trains the CARE model for denoising 2D images, supporting both full images and overlapping patches. Outputs are formatted in `.npz` for 2D denoising tasks.
+### 🔄 `CycleGAN_UTOM.ipynb`
 
-### 🧬 `CARE_patch_train_3D.ipynb`
+Implements **Cycle-Consistent Generative Adversarial Network (CycleGAN)**, a semi-supervised model for transforming images between domains using two unpaired datasets. CycleGAN enables content-preserving transformations between imaging modalities where paired datasets are unavailable, maintaining essential structural details while transforming the "style". Based on *[Unsupervised Content-Preserving Transformation for Optical Microscopy, Light Sci Appl 2021](https://www.nature.com/articles/s41377-021-00484-y)* by Li et al.
 
-Trains the CARE model on 3D image stacks for denoising, with support for both full image stacks and depth-based patching to handle 3D microscopy data.
+### 🌄 `SRGAN.ipynb`
+
+Applies **Super-Resolution Generative Adversarial Network (SRGAN)**, a model that enhances low-resolution images to high-resolution outputs with photorealistic details. SRGAN’s adversarial training produces high-quality textures, making it suitable for applications requiring realistic image enhancement. Based on *[Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network, arXiv 2017](https://arxiv.org/abs/1609.04802)* by Christian Ledig et al.
 
 ---
 
@@ -62,10 +73,6 @@ Prepares 2D images with overlapping patches and multiple normalization options. 
 ### 🧩 `patch_preprocessing_3D.ipynb`
 
 Processes 3D image stacks, creating depth-based patches suitable for 3D models. Performs depth normalization and evaluates impact of different strategies.
-
----
-Thank you for pointing that out. Here’s the revised README that correctly reflects the flexibility in data usage (both patched and full data):
-
 
 ---
 ![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
