@@ -10,7 +10,35 @@
   - ⁴ Cell, Developmental, and Molecular Biology Program, Tufts University, Boston, MA, USA  
 
 ---
-![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
+## 🧠 Model Training
+
+These notebooks train models for image super-resolution and denoising. They support both full image and patch-based training, with outputs in `.npz` format for train-test-validation.
+
+```plaintext
+├── model_training/
+│   ├── RCAN_standard.ipynb         # Trains RCAN for super-resolution on 2D images, with optional patching and SSIM evaluation
+│   ├── CSBDeep_experiment.ipynb    # Trains CSBDeep for denoising microscopy images, with optional patch-based processing
+│   ├── CARE_patch_train.ipynb      # Trains CARE for 2D image denoising, supporting full and patch-based input
+│   └── CARE_patch_train_3D.ipynb   # Trains CARE for 3D image stack denoising, supporting depth-based patching
+```
+
+### 🖼️ `RCAN_standard.ipynb`
+
+Trains a Residual Channel Attention Network (RCAN) for 2D image super-resolution, supporting both full images and patches, with SSIM evaluation options. Based on *[Image Super-Resolution Using Very Deep Residual Channel Attention Networks, ECCV 2018](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yulun_Zhang_Image_Super-Resolution_Using_ECCV_2018_paper.pdf)* by Yulun Zhang et al.
+
+### 🧪 `CSBDeep_experiment.ipynb`
+
+Trains CSBDeep for denoising noisy microscopy images, supporting both full and patch-based data with optional normalization. Based on *[CARE: Content-Aware Image Restoration, Nature Methods 2018](https://doi.org/10.1038/s41592-018-0216-7)* by Martin Weigert et al.
+
+### 🔍 `CARE_patch_train.ipynb`
+
+Trains the CARE model for denoising 2D images, supporting both full images and overlapping patches. Outputs are formatted in `.npz` for 2D denoising tasks.
+
+### 🧬 `CARE_patch_train_3D.ipynb`
+
+Trains the CARE model on 3D image stacks for denoising, with support for both full image stacks and depth-based patching to handle 3D microscopy data.
+
+---
 
 ## 📊 Data Processing
 
@@ -36,7 +64,13 @@ Prepares 2D images with overlapping patches and multiple normalization options. 
 Processes 3D image stacks, creating depth-based patches suitable for 3D models. Performs depth normalization and evaluates impact of different strategies.
 
 ---
+Thank you for pointing that out. Here’s the revised README that correctly reflects the flexibility in data usage (both patched and full data):
 
+
+---
+![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
+
+---
 
 ### 📄 250-Word Abstract:
 Non-invasive, label-free microscopy systems have seen significant improvements in imaging quality for tissue analysis and diagnostics. High lateral imaging resolution in novel ex vivo imaging systems has enabled the development of algorithms to extract functional information from living tissues. However, in vivo clinical microscopic imaging systems may have limited imaging resolution to extract relevant functional information. Modifying clinical imaging hardware to increase resolution can be constrained by regulatory and engineering challenges. Therefore, low-resolution (LR) images require computational methods to recover important signals. 
