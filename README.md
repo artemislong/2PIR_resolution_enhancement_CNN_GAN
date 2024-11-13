@@ -25,8 +25,6 @@ These notebooks implement model training experiments to enhance resolution in lo
 │   └── SRGAN.ipynb                 # Trains SRGAN for photorealistic single-image super-resolution
 ```
 
-Here’s the refined README with a consolidated explanation for CARE-based notebooks:
-
 ---
 
 ### 🖼️ `RCAN_standard.ipynb`
