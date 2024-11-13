@@ -12,6 +12,32 @@
 ---
 ![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
 
+## 📊 Data Processing
+
+These notebooks supported the development of data processing strategies for model training pipelines, applying and evaluating normalization, illumination correction, and patching implementations. Processed data is exported as train-test-validation `.npz` files.
+
+```plaintext
+├── data_processing/
+│   ├── mat_to_npz_processing.ipynb       # Converts .mat files to .npz with normalization and patching
+│   ├── patch_preprocessing_3D.ipynb      # Prepares 3D image stacks with depth-based patching
+│   └── patch_preprocessor.ipynb          # Processes 2D images with patching and normalization 
+```
+
+### 📝 `mat_to_npz_processing.ipynb`
+
+Converts `.mat` image stacks into `.npz` format with flexible normalization options, such as percentile clipping, and customizable patching methods. Implements and evaluates impact of illumination correction.
+
+### 🔧 `patch_preprocessor.ipynb`
+
+Prepares 2D images with overlapping patches and multiple normalization options. Outputs are uniform patches in `.npz` format.
+
+### 🧩 `patch_preprocessing_3D.ipynb`
+
+Processes 3D image stacks, creating depth-based patches suitable for 3D models. Performs depth normalization and evaluates impact of different strategies.
+
+---
+
+
 ### 📄 250-Word Abstract:
 Non-invasive, label-free microscopy systems have seen significant improvements in imaging quality for tissue analysis and diagnostics. High lateral imaging resolution in novel ex vivo imaging systems has enabled the development of algorithms to extract functional information from living tissues. However, in vivo clinical microscopic imaging systems may have limited imaging resolution to extract relevant functional information. Modifying clinical imaging hardware to increase resolution can be constrained by regulatory and engineering challenges. Therefore, low-resolution (LR) images require computational methods to recover important signals. 
 
