@@ -2,7 +2,7 @@
 
 ---
 
-### 👥 Authors:
+### 👥 Authors (of the overall research project):
 - **Tien Long Dinh**¹*, **Christopher M. Polleys**¹, **Nilay Vora**¹, **Hong-Thao Thieu**², **Elizabeth Genega**³, and **Irene Georgakoudi**¹⁴  
   - ¹ Department of Biomedical Engineering, Tufts University, Medford, MA, USA  
   - ² Department of Obstetrics and Gynecology, Tufts Medical Center, Boston, MA, USA  
