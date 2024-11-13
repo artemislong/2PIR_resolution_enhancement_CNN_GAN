@@ -1,13 +1,5 @@
 # 📝 Label-Free, Two-Photon Image Resolution Enhancement Using a Deep-Learning Autoencoder Algorithm
-
----
-
-### 👥 Authors (of the overall research project):
-- **Tien Long Dinh**¹*, **Christopher M. Polleys**¹, **Nilay Vora**¹, **Hong-Thao Thieu**², **Elizabeth Genega**³, and **Irene Georgakoudi**¹⁴  
-  - ¹ Department of Biomedical Engineering, Tufts University, Medford, MA, USA  
-  - ² Department of Obstetrics and Gynecology, Tufts Medical Center, Boston, MA, USA  
-  - ³ Department of Pathology and Laboratory Medicine, Tufts Medical Center, Boston, MA, USA  
-  - ⁴ Cell, Developmental, and Molecular Biology Program, Tufts University, Boston, MA, USA  
+This repository provides experimental scripts for a research project on enhancing microscopy image resolution. It implements models like RCAN, CARE, CycleGAN, and SRGAN, setting up and testing them for later training on a high-performance computing cluster. These experiments aim to improve mitochondrial clustering and redox metrics extraction, supporting non-invasive diagnostics in clinical settings.
 
 ---
 
@@ -73,8 +65,24 @@ Prepares 2D images with overlapping patches and multiple normalization options. 
 Processes 3D image stacks, creating depth-based patches suitable for 3D models. Performs depth normalization and evaluates impact of different strategies.
 
 ---
+## 📈 Evaluation Script
+The Train_eval.ipynb notebook loads a saved model and runs testing, evaluating performance using PSNR for reconstruction accuracy and SSIM for structural similarity to the target domain.
+
+---
 ![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
 
+---
+🙏 Acknowledgments
+Special thanks to Professor Irene Georgakoudi for her mentorship and the opportunity to be involved in this research and be part of ODDET lab team. Sincere gratitude to Dr. Nilay Vora for his invaluable support, training, and guidance, making this journey both enriching and memoriable.
+
+---
+
+### 👥 Authors (of the overall research project):
+- **Tien Long Dinh**¹*, **Christopher M. Polleys**¹, **Nilay Vora**¹, **Hong-Thao Thieu**², **Elizabeth Genega**³, and **Irene Georgakoudi**¹⁴  
+  - ¹ Department of Biomedical Engineering, Tufts University, Medford, MA, USA  
+  - ² Department of Obstetrics and Gynecology, Tufts Medical Center, Boston, MA, USA  
+  - ³ Department of Pathology and Laboratory Medicine, Tufts Medical Center, Boston, MA, USA  
+  - ⁴ Cell, Developmental, and Molecular Biology Program, Tufts University, Boston, MA, USA
 ---
 
 ### 📄 250-Word Abstract:
