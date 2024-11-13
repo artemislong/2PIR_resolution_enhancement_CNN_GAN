@@ -2,7 +2,7 @@
 This repository provides experimental scripts for a research project on enhancing microscopy image resolution. It implements models like RCAN, CARE, CycleGAN, and SRGAN, setting up and testing them for later training on a high-performance computing cluster. These experiments aim to improve mitochondrial clustering and redox metrics extraction, supporting non-invasive diagnostics in clinical settings.
 
   <br>
----
+
   <br>
 
 ## 🧠 Model Training
@@ -18,8 +18,7 @@ These notebooks implement model training experiments to enhance resolution in lo
 │   ├── CycleGAN_UTOM.ipynb         # Trains CycleGAN for unsupervised content-preserving transformation
 │   └── SRGAN.ipynb                 # Trains SRGAN for photorealistic single-image super-resolution
 ```
-  <br>
----
+
   <br>
 
 ### 🖼️ `RCAN_standard.ipynb`
@@ -78,19 +77,18 @@ The Train_eval.ipynb notebook loads a saved model and runs testing, evaluating p
 
   <br>
 
----
   <br>
   
 ## 🙏 Acknowledgments
 Special thanks to Professor Irene Georgakoudi for her mentorship and the opportunity to be involved in this research and be part of ODDET lab team. Sincere gratitude to Dr. Nilay Vora for his invaluable support, training, and guidance, making this journey both enriching and memoriable.
 
   <br>
----
-  <br>
+
 
 ![image](https://github.com/user-attachments/assets/cb2a1984-322d-4b45-9fe8-466163118310)
 
   <br>
+  
 ---
   <br>
   
@@ -101,7 +99,6 @@ Special thanks to Professor Irene Georgakoudi for her mentorship and the opportu
   - ³ Department of Pathology and Laboratory Medicine, Tufts Medical Center, Boston, MA, USA  
   - ⁴ Cell, Developmental, and Molecular Biology Program, Tufts University, Boston, MA, USA
   <br>
----
   <br>
   
 ### 📄 250-Word Abstract:
@@ -112,14 +109,11 @@ Deep autoencoding neural networks have demonstrated substantial signal restorati
 Optical redox ratio and mitochondrial clustering in restored images are evaluated to assess the impact of algorithms on functional metrics extraction. The reversed unsupervised algorithm reduces the resolution of HR images to quantitatively assess the impact of LR imaging on metabolic information acquisition. Improved functional metrics extraction in the clinical environment is expected to accelerate the clinical translation of novel non-invasive diagnostic solutions.
   <br>
   
----
   <br>
   
 ### 🔍 100-Word Summary:
 Microscopic imaging systems with high resolution (HR) enable extraction of functional information for disease diagnosis within living tissues. However, in vivo clinical microscopic imaging systems may have limited imaging resolution to extract relevant functional information. This study aims to restore functional metrics from LR images of squamous epithelial tissues using supervised and unsupervised deep autoencoding algorithms. The reversed unsupervised algorithm is applied to reduce the resolution of HR images to quantitatively assess the impact of LR imaging on metabolic information acquisition. Improved functional metrics extraction is expected to accelerate the clinical translation of novel non-invasive diagnostic solutions.
   <br>
-  
----
   <br>
   
 ### 🔑 Keywords:
